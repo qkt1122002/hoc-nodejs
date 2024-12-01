@@ -1,0 +1,19 @@
+{
+  "name": "quanbeoiot",
+  "version": "1.0.0",
+  "description": "hoc nodejs",
+  "main": ".src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./src/index.js"
+  },
+  "author": "quanbeoiot",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "3.1.8",
+    "express": "^4.21.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
