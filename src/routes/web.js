@@ -1,18 +1,12 @@
 const express = require('express');
 const router = express.Router();
+const { getHomepage, getABC, getQuanBeoIoT } = require('../controllers/homeController');
 
+router.get("/", getHomepage);
 
-router.get("/", (req, res) => {
-    res.render('index.ejs');
-});
+router.get("/abc", getABC);
 
-router.get("/abc", (req, res) => {
-    res.send('check ABC');
-});
-
-router.get("/quanbeoiot", (req, res) => {
-    res.send('<h1> QuanBeoIoT </h1>');
-});
+router.get("/quanbeoiot", getQuanBeoIoT);
 
 module.exports = router;
 
