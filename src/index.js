@@ -12,7 +12,7 @@ configViewEngine(app);
 
 app.use('/', webRoutes);
 
-
+let a = 100;
 
 app.listen(port, hostname, () => {
     console.log(`Listen on port ${port}`);
