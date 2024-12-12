@@ -2,7 +2,8 @@ const express = require('express');
 const router = express.Router();
 const { 
     getHomepage, getABC, getQuanBeoIoT, getAPI, postAddUser, getAddUser, getEditUser, 
-    postEditUser, postDeleteUser 
+    postEditUser, postDeleteUser, 
+    getDeleteUser
 
 } = require('../controllers/homeController');
 
@@ -20,6 +21,7 @@ router.post('/add-users', postAddUser);
 router.get('/edit-user/:id', getEditUser);
 router.post('/edit-user/:id', postEditUser);
 
+router.get('/delete-user/:id', getDeleteUser);
 router.post('/delete-user/:id', postDeleteUser);
 module.exports = router;
 

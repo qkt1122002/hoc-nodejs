@@ -16,8 +16,12 @@
         <fieldset>
             <legend>Delete user</legend>
             Bạn có chắc là muốn xóa người dùng <b><%= user[0].name %></b> không?
-            <button onclick="/">Có</button>
-            <button>Không</button>
+            <form action="/delete-user/<%=user[0].id%>" method="post">
+                <button type="submit">Có</button>
+            </form>
+            <form action="/">
+                <button>Không</button>
+            </form>
         </fieldset>
     </div>
     
